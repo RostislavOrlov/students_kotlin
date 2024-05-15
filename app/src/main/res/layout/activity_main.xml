@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Upd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Изменить"
+        app:layout_constraintTop_toTopOf="@+id/btn_Add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp" />
+
+    <ImageButton
+        android:id="@+id/btn_Prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Student"
+        app:layout_constraintTop_toTopOf="@+id/tv_Student"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/tv_Student"
+        android:layout_width="216dp"
+        android:layout_height="322dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <ImageButton
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_Student"
+        app:layout_constraintTop_toTopOf="@+id/tv_Student"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#32B61B"
+        android:text="Добавить"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Student"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <ImageButton
+        android:id="@+id/btn_Del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F42A2A"
+        app:layout_constraintTop_toTopOf="@+id/btn_Upd"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="327dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
